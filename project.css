@@ -1,0 +1,546 @@
+*{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    overflow: hidden;
+    margin: 0%;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+ }
+
+ 
+ .sidebar{
+    background-color: rgb(0, 0, 0);
+    width: 20.8rem;
+    border-radius: 1rem;
+    margin: 0.55rem ;    
+}
+
+
+.main{
+    background-color: whitesmoke;
+    overflow: auto;
+    flex: 1;  
+    border-radius: 1rem; 
+    margin: 0.45rem ; 
+}
+
+.musicplayer{
+    background-color:black ;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    height: 4.5rem;
+    margin-top: 1rem;   
+}
+
+
+a{
+    text-decoration: none;    
+}
+
+
+.nav  {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.625rem;
+    justify-content: center;
+    height: 7.125rem;   
+}
+
+
+.nav-option{
+    background-color: #121212; 
+    opacity: 0.7; 
+    padding: 0.5rem 0.625rem;  
+}
+
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option a {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.library{
+    background-color: #121212;
+    padding: 0.35rem 0.65rem ;
+    height: 100%;
+    margin-top: 0.45rem;
+    border-radius: 1rem;   
+}
+
+.option{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.45rem;
+    
+}
+
+
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;    
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+#a , #b{
+    opacity: 0.7;
+}
+
+
+#a:hover , #b:hover{
+    opacity: 1;
+}
+
+
+.icons i{
+    margin-right: 1.25rem;
+}
+
+
+.box1{
+    height: 14rem;
+    margin:0.5rem 0rem 0.5rem 0rem;
+    background-color:#760230;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem ;
+    font-size: 16px;
+}
+
+.box1-p1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    font-size: 16px;
+    
+}
+
+.box1-p2 {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    font-size: 16px;
+}
+
+.badge{
+    color: black;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: fit-content;
+    border: none;
+    height: 2.5rem;
+    padding: 0.25rem 1rem;
+    margin-top: 1.25rem;
+
+}
+.badge:hover{
+    background-color: #83480d;
+}
+
+.box2{
+    height: 14rem;
+    margin:1.5rem 0rem 0.5rem 0rem;
+    background-color:#232323;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem ;
+    font-size: 16px;
+    background-color:#760230;
+}
+
+.box2-p1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    font-size: 16px;
+}
+
+.box2-p2 {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 0.75rem;
+    font-size: 16px;
+}
+
+
+.sticky{
+    position: sticky;
+    top: 0;
+    height: 3.4rem;
+    background-color: #83480d;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    z-index: 10;
+    border-radius: 1rem;
+     
+}
+
+.immg{
+    display: flex;
+}
+
+.img{
+    
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-top:0.58rem;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0.7
+   
+}
+
+.img:hover{
+    background-color: black;
+    opacity: 1;
+}
+
+#inst{
+    background-color: black;
+    color : white;
+    margin-top: 0.19rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 2.9rem;
+   
+    
+}
+#inst i{
+    margin: 0.25rem 0.25rem 0 0;
+}
+
+#aaa{
+    margin-top: 0.25rem;
+    margin-right: 1rem;
+    height: 2.9rem;
+   
+}
+
+#i{
+    background-color: black;
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+    margin-right: 1.25rem;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+   
+}
+
+@media (max-width: 1000px){
+    #hide1 , #aaa{
+        display: none;
+    }
+}
+
+.cards{
+    padding: 0.5rem;
+}
+
+h2{
+    margin-left: 0.625rem;
+}
+
+.card{
+    background-image: 1.png;
+    width: 11.600rem;
+    margin: .625rem;
+    margin-right: 0.625;
+    border-radius: 0.5rem;
+}
+
+
+.card img{
+    width: 10rem;
+    margin: 0.750rem;
+    border-radius: 0.5rem;
+    
+}
+
+.card-title{
+    margin: 0 .625rem 0 0.625rem;
+    font-weight: 600;
+    
+}
+
+.card-info{
+    margin: 0.15rem 0.625rem 0.625rem 0.625rem;
+    opacity: 0.7;
+    font-size: 0.85rem;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
+    
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.5;
+}
+
+.musicplayer{
+   display: flex;  
+   justify-content: space-between;
+   align-items: center;
+}
+
+.album{
+    width: 25%; 
+}
+
+.player{
+    width: 50%;
+}
+
+.controls{
+    width: 25%;
+}
+
+.player-icon{
+    height: 1rem;
+    margin: 0.75rem 0.75rem 0.25rem 0.75rem;
+    opacity: 0.6;
+}
+
+.player-icon:hover{
+    opacity: 1;
+}
+
+#mainicon{
+    height: 2rem;
+    opacity: 1;
+}
+
+
+
+.player{
+
+}
+
+.playercontrols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 7rem;
+    height: 0.2rem;
+
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #09da56;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.callout {
+    padding: 80px 70px 30px;
+}
+.welcome {
+    margin: 0 auto 4rem;
+    position: relative;
+    z-index: 2;
+}
+.tc {
+    text-align: center;
+    font-size: 2rem;
+}
+.white {
+    background: #1f3202;
+}
+.white:hover{
+    background-color: #121212 ;
+}
+
+div {
+    display: block;
+}
+body, .page .cbp-l-project-desc-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #686868;
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.home-service {
+    margin: 0 auto 30px;
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    padding: 50px;
+    min-height: 350px;
+}
+
+
+body, .page .cbp-l-project-desc-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #686868;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+:root {
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+
+.wrapper-home-service {
+    background: #005a87;
+    padding: 30px;
+    min-height: 295px;
+   font-size: 20px;
+}
+.wrapper-home-service:hover{
+    opacity: 1;
+    background-color: #121212;
+    
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+a:visited {
+    color: inherit;
+}
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+ 
+body, .page .cbp-l-project-desc-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #686868;
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+
+
+
+
